@@ -11,8 +11,13 @@
   h6 {
     @apply font-heading capitalize;
   }
+  @media (min-width: 640px) {
+    h2 {
+      @apply text-6xl;
+    }
+  }
   h2 {
-    @apply text-6xl leading-relaxed;
+    @apply text-4xl leading-relaxed;
   }
 }
 
