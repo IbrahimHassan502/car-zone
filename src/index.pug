@@ -1,0 +1,418 @@
+doctype html
+html(lang="en")
+  head
+    <!-- ============== meta tags ============== -->
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    <!-- ============== favicon ============== -->
+    link(rel="shortcut icon", href="../public/images/favicon.ico", type="image/x-icon")
+    <!-- ============== website title ============== -->
+    title car zone
+    <!-- ============== google fonts ============== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- ============== css bundles ============== -->
+    link(rel="stylesheet", href="public/css/fontello.css")
+    <!-- ============== main style ============== -->
+    link(rel="stylesheet", href="../public/css/style.css")
+  body.text-sm.leading-loose.font-body(class="sm:text:lg")
+    <!-- ============== navigation bar ============== -->
+    nav.absolute.w-full
+      //- container satarts
+      .container.flex.items-center.pt-16.pb-8(class='lg:justify-between')
+        //- logo
+        .logo.mr-auto(class='lg:mr-0')
+          img(class='w-2/3 lg:w-full',src="public/images/logo.svg", alt="website logo")
+        //- notification holder (visible on mobile only)
+        .relative.mr-1(class="lg:hidden sm:mr-10")
+          div.notfication-num.w-4.aspect-square.rounded-full.bg-red-600.text-xs.text-white.grid.place-items-center.text-xs.absolute.top-0.left-0(class='sm:w-5 -translate-y-1/2 translate-x-1/2') 4
+          img(class="w-10/12", src="public/images/bell.svg", alt="notifcation icon")
+        //- menu button
+        .menu-button.text-xl.relative.z-20
+          i.icon-menu-outline(class='lg:hidden')
+        //- navigation menu
+        ul.nav-list.flex.flex-col.items-center.uppercase.font-medium.gap-12.absolute.inset-0.h-screen.justify-center.bg-white.-translate-y-full.duration-700.bg-white.z-10(class='lg:relative  lg:h-auto lg:justify-start lg:bg-none lg:flex-row lg:translate-y-0')
+          li
+            a(href="#") home
+          li
+            a(href="#") new
+          li
+            a(href="#") used
+          li
+            a(href="#") car detil
+          li
+            a(href="#") pages
+          li(class='lg:hidden')
+            a.inline-block.py-3.px-6.border-2.border-black.rounded-md.capitalize(href="#") login
+        //- notification and CTA holder (visible on desktop only)
+        .items-center.gap-10.hidden(class="lg:flex")
+          div.relative
+            div.notfication-num.w-5.h-5.rounded-full.bg-red-600.text-white.grid.place-items-center.text-xs.absolute.top-0.left-0(class='-translate-y-1/2 translate-x-1/2') 4
+            img(src="public/images/bell.svg", alt="notifcation icon")
+          a.py-3.px-6.border-2.border-black.rounded-md.capitalize(href="#") login
+
+
+    <!-- ============== hero section ============== -->
+    section.relative.min-h-screen.flex.items-center.justify-center.pt-40(class="sm:pt-50")
+      //- background orange decoration
+      div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
+        div.aspect-square.bg-main-color.rounded-full.absolute.inset-0(class='w-4/12 -translate-x-3/4 -translate-y-1/2 shadow-[2px_2px_30px_30px_#fc612c]')
+
+        div.aspect-square.bg-main-color.rounded-full.absolute.bottom-0.right-0(class='w-4/12 translate-x-3/4 translate-y-1/2 shadow-[2px_2px_30px_30px_#fc612c]')
+      //- container
+      .container
+        //-first row, flex container
+        div(class="sm:flex")
+          //- heading holder
+          .capitalize.grow.leading-none.text-2xl.mb-10(class='sm:text-[65px]')
+            h1.mb-2(class="sm:mb-5") best in auto
+            p.font-heading.pl-4(class='sm:pl-28') rent &amp; service
+          //- image holder
+          div.relative.rounded-full.overflow-hidden(class="lg:w-2/5")
+            //- image decorateive curve
+            .rounded-full.absolute.left-10.bottom-5.w-full.h-full.border-2.border-white.rounded-full
+              //- image
+            img(src="public/images/hero-image.png", alt="")
+        //- second row, grid container
+        .hero-row.grid-cols-2.items-end.gap-14(class="sm:grid")
+          //- image holder
+          p.leading-relaxed.col-start-2.mt-8(class="sm:mb-8") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to
+
+          div.relative.rounded-full.overflow-hidden.z-10(class="translate-y-1/2 lg:w-2/5 sm:absolute")
+            //- image decorateive curve
+            .rounded-full.absolute.right-10.bottom-5.w-full.h-full.border-2.border-white.rounded-full
+            //- image
+            img.w-full.h-full(src="public/images/hero-image2-cropped.jpg", alt="front view of vintage orange car")
+
+
+
+    <!-- ============== why us section ============== -->
+    section.relative.pt-40.pb-24.bg-main-color.text-white
+      //- decorative phrase
+      p.font-heading.text-7xl.absolute.right-2.top-14.opacity-20 why choose us ?
+      .container
+        h2.text-center why choose us ?
+        p.text-center.mx-auto.mb-9(class='sm:w-2/3') Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias
+        //- grid container
+        .grid.grid-cols-3.gap-12
+          //- first box
+          div
+            img.mb-8(src="public/images/why-us-car1.png", alt="side view vintage dark green car")
+            //- heading holder
+            div.relative.mb-4
+              h2.text-4xl Online Vehicle Rental <br> Booking
+
+              div.absolute.bottom-3.left-40.h-px.rounded-full.bg-white(class="w-3/12")
+
+            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+
+          //- second box
+          div.mt-20
+            img.mb-8(src="public/images/why-us-car2.png", alt="side view vintage dark green car")
+            //- heading holder
+            div.relative.mb-4
+              h2.text-4xl Professional Technician <br> Services
+
+              div.absolute.bottom-3.left-40.h-px.rounded-full.bg-white(class="w-3/12")
+            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+
+          //- third box
+          div.mt-40
+            img.mb-8(src="public/images/why-us-car1.png", alt="side view vintage dark green car")
+            //- heading holder
+            div.relative.mb-4
+              h2.text-4xl Full Auto Servicing <br> Facility
+
+              div.absolute.bottom-3.left-40.h-px.rounded-full.bg-white(class="w-3/12")
+            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+
+
+    <!-- ============== rent a car ============== -->
+    section.relative.pt-32.pb-6.overflow-hidden
+      //- background orange decoration
+      div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
+        div.aspect-square.bg-main-color.rounded-full.absolute.inset-0(class='w-4/12 -translate-x-3/4 -translate-y-1/2 shadow-[2px_2px_30px_30px_#fc612c]')
+
+      .container
+        //- grid container
+        .grid.gap-10(class="grid-cols-[2fr_1fr]")
+          //- form holder
+          div
+            h2 book and rent a car
+            p.mb-20 Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias, bibendum elit nemo.
+
+            //- the rent form
+            form.grid.grid-cols-2.gap-x-4.gap-y-12(action="POST") 
+              input#user-name.py-4.px-8(type="text", name="user name", placeholder="your name")
+
+              input#emil.py-4.px-8(type="email", name="email", placeholder="your email")
+
+              input#phone-number.py-4.px-8(type="tel", name="phone number", placeholder="your phone number")
+              select#car-type.capitalize.py-4.px-8(name="car type")
+                option(value="toyta") toyta
+                option(value="nissan") nissan
+                option(value="honda") honda
+                optoin(value="tesla") tesla
+
+              input#pick-up-date.py-4.px-8(type="date", name="pick up date", placeholder="pick up date")
+
+              input#drop-off-date.py-4.px-8(type="date", name="drop off date",placeholder="drop off date")
+
+              input.capitalize.py-5.px-10.bg-main-color.rounded-md.text-white.text-sm.font-bold.justify-self-start(type="submit", value="inquiry now")
+          //- image holder
+          div.border-2.border-main-color.rounded-3xl.rounded-tr-none.self-end
+            img.rounded-3xl.relative.top-5.left-28(src="public/images/book-a-car.png", alt="side view of a small vintage orange car")
+
+    <!-- ============== comfortable car for hire section ============== -->
+    section.relative.pt-32.pb-28
+      //- background orange decoration
+      div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
+        div.aspect-square.bg-main-color.rounded-full.absolute.bottom-0.right-0(class='w-4/12 translate-x-3/4 translate-y-1/2 shadow-[2px_2px_30px_30px_#fc612c]')
+
+      .container
+        h2.text-center comfortabel car for hire !
+        p.text-center.mb-20.leading-loose.mx-auto(class='w-1/2') Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias, bibendum elit nemo.
+        //- grid container
+        .grid.grid-cols-3.gap-10
+          //- first box
+          img.object-cover(src="public/images/comfortable-main.png", alt="side view of the rear of an orange beatle car")
+          //- second box
+          div
+            p.mb-8 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
+
+            p If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
+          //- third box (also grid container)
+          div.grid.grid-cols-2.gap-x-5
+            img.rounded-full(src="public/images/comfortable-oval-beatle.png", alt="wide lence shot of a the back of a yellow beatle car among old buildings")
+
+            img(src="public/images/comfortable-driving-wheel.png", alt="old luxuries driving wheel of an orange vintage car")
+
+            img.col-span-2(src="public/images/comfortable-car-back.png", alt="back of an orange convortable car")
+
+    <!-- ============== comfortable car for hire 2 section ============== -->
+    section.relative.pt-20.bg-main-color.text-white
+      //- decorative phrase
+      p.font-heading.text-7xl.absolute.right-6.top-14.opacity-20 Comfortable Car
+      .container
+        //- grid container
+        .grid.grid-cols-2.items-end.mb-12.justify-items-center
+          h2.pb-36 Comfortable Car <br> For Hire !
+
+          p.leading-loose There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+        //- image holder
+        div.relative.mx-auto.mb-12.-mt-48(class='w-4/5 translate-y-1/2 shadow-[1px_1px_100px_rgba(0,0,0,0.7)]')
+          img.absolute(class="top-[9%] -translate-x-1/2", src="public/images/comfortable2-secondary-left.png", alt="front view of an old beatle car with a black right wing in front of an old villa")
+
+          img.object-cover.w-full(src="public/images/comfortable2-main.png", alt="side view of a yellowish beatle in front of an old house with a black iron fence in the autumn")
+
+          img.absolute.-bottom-9.-right-1(src="public/images/comfortable2-secondary-right.png", alt="old yellow beatle car with a bike on its grate parked infront of a luxuries house with a tree beside the house door")
+
+    <!-- ============== staff section ============== -->
+    section.relative.pt-52.mb-4
+      //- background orange decoration
+      div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
+        div.aspect-square.bg-main-color.rounded-full.absolute(class='w-4/12 top-1/4 -translate-x-3/4 -translate-y-1/2 shadow-[2px_2px_30px_30px_#fc612c]')
+
+      //- container starts
+      .container
+        h2.text-center.mb-6 our faithful staff
+
+        p.text-center.mx-auto.mb-10(class="sm:w-2/3") Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias, bibendum elit nemo.
+
+        //- grid container
+        .grid.grid-cols-3.gap-11 
+          //- first box
+          div
+            img.mb-8(src="public/images/staff1.png", alt="smiling staff memeber facing the camera with his arms crossed wearing a dark havan pullover with light blue shirt under it, and glasses on his face")
+
+            //- heading holder
+            div.relative.mb-2.flex.items-center
+              h2.text-4xl.capitalize.mb-2 william scott
+              div.h-px.rounded-full.bg-black(class="w-3/12")
+
+            p.capitalize.font-medium rental agent
+
+            //- icon with text holder
+            .flex.items-center(class="gap-0.5")
+              i.icon-phone
+              span (+89)652 555 320
+
+
+          //- second box
+          div.mt-20
+            img.mb-8(src="public/images/staff2.png", alt="smiling staff memeber facing the camera with a snowy background wearing a black hoody")
+
+            //- heading holder
+            div.relative.mb-2.flex.items-center
+              h2.text-4xl.capitalize.mb-2 william scott
+              div.h-px.rounded-full.bg-black(class="w-3/12")
+
+            p.capitalize.font-medium rental agent
+
+            //- icon with text holder
+            .flex.items-center(class="gap-0.5")
+              i.icon-phone
+              span (+89)652 555 320
+
+
+          //- third box
+          div.mt-40
+            img.mb-8(src="public/images/staff3.png", alt="smiling bearded staff memeber facing the camera with his arms crossed wearing a light blue shirt")
+
+            //- heading holder
+            div.relative.mb-2.flex.items-center
+              h2.text-4xl.capitalize.mb-2 william scott
+              div.h-px.rounded-full.bg-black(class="w-3/12")
+
+            p.capitalize.font-medium rental agent
+
+            //- icon with text holder
+            .flex.items-center(class="gap-0.5")
+              i.icon-phone
+              span (+89)652 555 320
+
+    <!-- ============== review section ============== -->
+    section.relative.pt-36.pb-44
+      .container
+        .flex.items-end.justify-center.mb-20
+          h2.mb-12.-mr-20 read the best review <br> from our users
+
+          p(class="sm:w-2/5") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+
+        //- grid container
+        .grid.grid-cols-3
+          //- first box
+          .pt-10.pb-7.px-8.rounded-3xl
+            p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
+
+            //- star container
+            div.flex.items-center.mb-10.text-2xl.text-yellow-500
+              i.icon-star
+              i.icon-star
+              i.icon-star
+              i.icon-star
+              i.icon-star
+
+            //- image with name
+            div.flex.items-center.gap-6
+              img(src="public/images/client1.png", alt="a man facing the camera and smiling with a pink background")
+
+              span.capitalize.font-medium ronney samba
+
+          //- second box
+          .pt-10.pb-7.px-8.rounded-3xl.bg-main-color.mt-24.text-white
+            p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
+
+            //- star container
+            div.flex.items-center.mb-10.text-2xl.text-yellow-500
+              i.icon-star
+              i.icon-star
+              i.icon-star
+              i.icon-star
+              i.icon-star
+
+            //- image with name
+            div.flex.items-center.gap-6
+              img(src="public/images/client3.png", alt="a man facing the camera and smiling with a pink background")
+
+              span.capitalize.font-medium jenniver janet
+
+          //- third box
+          .pt-10.pb-7.px-8.rounded-3xl
+            p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
+
+            //- star container
+            div.flex.items-center.mb-10.text-2xl.text-yellow-500
+              i.icon-star
+              i.icon-star
+              i.icon-star
+              i.icon-star
+              i.icon-star
+
+            //- image with name
+            div.flex.items-center.gap-6
+              img(src="public/images/client3.png", alt="a man facing the camera and smiling with a pink background")
+
+              span.capitalize.font-medium ronney samba
+
+    <!-- ============== footer section ============== -->
+    footer.text-white.pt-28(class='bg-[#150A05]')
+      .container(class="sm:px-12")
+        .flex.items-center.justify-between.mb-28
+          h2 welcome car zone
+
+          a.bg-main-color.text-white.rounded-full.py-5.px-14(href="#") view car
+        .w-full.rounded-full.bg-white.mb-20(class='h-0.5')
+
+        //- grid container
+        .grid.gap-x-12.gap-y-32(class='grid-cols-[1fr_2fr]')
+          //- first box
+          div
+            img.mb-2(src="public/images/logo-light.svg", alt="logo")
+            p Eiusmod condimentum totam, ultrices, quis elem entum, dui.
+
+          //- second box
+          .grid.grid-cols-3.gap-10
+            //- first sub box
+            div
+              p.mb-3.font-medium.uppercase.text-3xl about us
+                ul
+                  li
+                    a(href="#") home
+                  li
+                    a(href="#") about
+                  li
+                    a(href="#") car
+                  li
+                    a(href="#") team
+
+            //- second sub box
+            div
+              p.mb-3.font-medium.uppercase.text-3xl company
+                ul
+                  li
+                    a(href="#") core values
+                  li
+                    a(href="#") partner w/us
+                  li
+                    a(href="#") blog
+                  li
+                    a(href="#") contact
+
+            //- third sub box
+            div
+              p.mb-3.font-medium.uppercase.text-3xl support
+                ul
+                  li
+                    a(href="#") support center
+                  li
+                    a(href="#") feedback
+                  li
+                    a(href="#") accessability
+
+
+          //- third box
+          div.col-span-3.flex.flex-col.items-center
+            div
+              h2.text-3xl.mb-6 get in touch
+
+              form.flex.flex-col.gap-5(action="POST")
+                input#news-letter-email.py-3.px-5.text-white.rounded-full(type="text", name="news letter email", placeholder="your email here", class='bg-main-color/20')
+                input.rounded-full.bg-main-color.text-white.px-40(type="submit", value="get access", class="py-3.5")
+
+        //- copyright
+        div.pb-2.mt-20.capitalize.text-center.text-sm
+          div.mb-2.flex.gap-4.justify-center
+            div.capitalize
+              | coded with 
+              i.icon-heart.text-main-color
+              | by 
+              span.text-main-color IH codes
+            div.capitalize
+              | designed by 
+              a.text-main-color.underline(href="https://www.figma.com/@tanvier") tanvir hasan
+          | &copy; 2023 car zone. all rights reserved
+
+
+    script(src="public/js/script.js") 
