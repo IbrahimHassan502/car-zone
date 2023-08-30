@@ -458,6 +458,10 @@ h2 {
   line-height: 1.625;
 }
 
+:root {
+  --main-color: #fc612c;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -1290,8 +1294,8 @@ h2 {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-\[2px_2px_30px_30px_var\(--tw-main-color\)\] {
-  --tw-shadow: 2px 2px 30px 30px var(--tw-main-color);
+.shadow-\[2px_2px_30px_30px_var\(--main-color\)\] {
+  --tw-shadow: 2px 2px 30px 30px var(--main-color);
   --tw-shadow-colored: 2px 2px 30px 30px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
