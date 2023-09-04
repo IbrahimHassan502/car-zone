@@ -63,7 +63,7 @@ html(lang="en")
       //- container
       .container
         //-first row, flex container
-        div(class="sm:flex")
+        div(class="lg:flex")
           //- heading holder
           .capitalize.grow.leading-none.text-2xl.mb-10(class='xs:text-4xl sm:text-[65px]')
             h1.mb-2(class="sm:mb-5") best in auto
@@ -73,13 +73,14 @@ html(lang="en")
             //- image decorateive curve
             .rounded-full.absolute.left-10.bottom-5.w-full.h-full.border-2.border-white.rounded-full
               //- image
-            img(src="public/images/hero-image.png", alt="")
+            img.w-full(src="public/images/hero-image.png", alt="")
         //- second row, grid container
-        .hero-row.grid-cols-2.items-end.gap-14(class="sm:grid")
-          //- image holder
-          p.leading-relaxed.col-start-2.mt-20.-mb-12(class="lg:mb-8") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to
+        .hero-row.grid-cols-2.items-end.gap-14(class="lg:grid")
 
-          div.relative.rounded-full.overflow-hidden.z-10(class="translate-y-1/2 lg:w-2/5 sm:absolute")
+          p.leading-relaxed.col-start-2.mt-20(class="max-sm:mt-40") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to
+
+          //- image holder
+          div.relative.rounded-full.overflow-hidden.z-10(class="translate-y-1/2 lg:w-2/5 lg:absolute max-lg:-mt-[20%]")
             //- image decorateive curve
             .rounded-full.absolute.right-10.bottom-5.w-full.h-full.border-2.border-white.rounded-full
             //- image
@@ -88,14 +89,14 @@ html(lang="en")
 
 
     <!-- ============== why us section ============== -->
-    section.relative.pt-48.pb-24.bg-main-color.text-white
+    section.relative.pt-48.pb-24.bg-main-color.text-white(class="xs:max-lg:pt-72")
       //- decorative phrase
-      p.hidden.font-heading.text-3xl.absolute.top-20.opacity-20(class="sm:block sm:top-14 sm:text-7xl sm:right-2") why choose us ?
+      p.hidden.font-heading.text-7xl.absolute.right-2.top-20.opacity-20(class="lg:block") why choose us ?
       .container
         h2.text-center.mb-4.leading-normal(class="sm:mb-0") why choose us ?
         p.text-center.mx-auto.mb-9(class='sm:w-2/3') Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias
         //- grid container
-        div(class="sm:grid sm:grid-cols-3 sm:gap-12")
+        div.grid.gap-20(class="lg:grid-cols-3 lg:gap-12")
           //- first box
           div
             img.mb-8(src="public/images/why-us-car1.png", alt="side view vintage dark green car")
@@ -108,7 +109,7 @@ html(lang="en")
             p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
           //- second box
-          div.mt-20
+          div(class="lg:mt-20")
             img.mb-8(src="public/images/why-us-car2.png", alt="side view vintage dark green car")
             //- heading holder
             div.relative.mb-4
@@ -118,7 +119,7 @@ html(lang="en")
             p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
           //- third box
-          div.mt-40
+          div(class="lg:mt-40")
             img.mb-8(src="public/images/why-us-car1.png", alt="side view vintage dark green car")
             //- heading holder
             div.relative.mb-4
@@ -136,7 +137,7 @@ html(lang="en")
 
       .container
         //- grid container
-        div(class="sm:grid sm:gap-10 sm:grid-cols-[2fr_1fr]")
+        div(class="lg:grid lg:gap-10 lg:grid-cols-[2fr_1fr]")
           //- form holder
           div
             h2 book and rent a car
@@ -162,7 +163,7 @@ html(lang="en")
               input.capitalize.py-5.px-10.bg-main-color.rounded-md.text-white.text-sm.font-bold.justify-self-start(type="submit", value="inquiry now")
           //- image holder
           div.border-2.border-main-color.rounded-3xl.self-end
-            img.rounded-3xl.relative(class="sm:top-5 sm:left-28 sm:rounded-tr-none", src="public/images/book-a-car.png", alt="side view of a small vintage orange car")
+            img.rounded-3xl.relative(class="sm:top-5 sm:left-28 lg:rounded-tr-none", src="public/images/book-a-car.png", alt="side view of a small vintage orange car")
 
     <!-- ============== comfortable car for hire section ============== -->
     section.relative.pt-32.pb-28
@@ -174,21 +175,21 @@ html(lang="en")
         h2.text-center.text-3xl.leading-snug.mb-8(class="sm:text-4xl sm:mb-0") comfortabel car for hire !
         p.text-center.mb-20.leading-loose.mx-auto(class='sm:w-1/2') Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias, bibendum elit nemo.
         //- grid container
-        div(class="sm:grid sm:grid-cols-3 sm:gap-10")
+        div(class="sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-10")
           //- first box
-          img.object-cover.mb-6(class="sm:mb-0", src="public/images/comfortable-main.png", alt="side view of the rear of an orange beatle car")
+          img.object-cover.mb-6(class="sm:mb-0 sm:self-stretch", src="public/images/comfortable-main.png", alt="side view of the rear of an orange beatle car")
           //- second box
           div
             p.mb-8 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
 
-            p.mb-8 If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
+            p If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
           //- third box (also grid container)
-          div.grid.grid-cols-2.gap-x-5
-            img.rounded-full(src="public/images/comfortable-oval-beatle.png", alt="wide lence shot of a the back of a yellow beatle car among old buildings")
+          div.grid.grid-cols-2.gap-5(class="sm:col-span-full lg:col-span-1 justify-items-center")
+            img.rounded-full.object-cover.h-full(src="public/images/comfortable-oval-beatle.png", alt="wide lence shot of a the back of a yellow beatle car among old buildings")
 
-            img(src="public/images/comfortable-driving-wheel.png", alt="old luxuries driving wheel of an orange vintage car")
+            img.object-cover.h-full(src="public/images/comfortable-driving-wheel.png", alt="old luxuries driving wheel of an orange vintage car")
 
-            img.col-span-2(src="public/images/comfortable-car-back.png", alt="back of an orange convortable car")
+            img.col-span-2.object-cover.h-full.w-full(src="public/images/comfortable-car-back.png", alt="back of an orange convortable car")
 
     <!-- ============== comfortable car for hire 2 section ============== -->
     section.relative.pt-20.bg-main-color.text-white
@@ -221,7 +222,7 @@ html(lang="en")
         p.text-center.mx-auto.mb-10(class="sm:w-2/3") Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias, bibendum elit nemo.
 
         //- grid container
-        div(class="sm:grid sm:grid-cols-3 sm:gap-11")
+        div.grid.gap-20(class="max-lg:mt-24 lg:grid-cols-3 lg:gap-11")
           //- first box
           div
             img.mb-8(src="public/images/staff1.png", alt="smiling staff memeber facing the camera with his arms crossed wearing a dark havan pullover with light blue shirt under it, and glasses on his face")
@@ -240,7 +241,7 @@ html(lang="en")
 
 
           //- second box
-          div.mt-20
+          div(class="lg:mt-20")
             img.mb-8(src="public/images/staff2.png", alt="smiling staff memeber facing the camera with a snowy background wearing a black hoody")
 
             //- heading holder
@@ -257,7 +258,7 @@ html(lang="en")
 
 
           //- third box
-          div.mt-40
+          div(class="lg:mt-40")
             img.mb-8(src="public/images/staff3.png", alt="smiling bearded staff memeber facing the camera with his arms crossed wearing a light blue shirt")
 
             //- heading holder
@@ -398,7 +399,7 @@ html(lang="en")
               h2.text-3xl.mb-6 get in touch
 
               form.flex.flex-col.gap-5(action="POST")
-                input#news-letter-email.py-3.px-5.text-white.rounded-full(type="text", name="news letter email", placeholder="your email here", class='bg-main-color/20')
+                input#news-letter-email.py-3.px-5.text-white.rounded-full(type="text", name="news letter email", placeholder="your email here", class='bg-main-color/20 placeholder:text-white')
 
                 input.rounded-full.bg-main-color.text-white(class="py-3.5 sm:px-40", type="submit", value="get access")
 
