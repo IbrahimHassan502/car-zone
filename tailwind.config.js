@@ -10,6 +10,9 @@ module.exports = {
         heading: ["Abril\\ Fatface", "crusive"],
         body: ["Poppins", "sans-serif"],
       },
+      screens: {
+        xs: "300px",
+      },
     },
   },
   plugins: [],
