@@ -22,8 +22,36 @@
   :root {
     --main-color: #fc612c;
   }
-}
 
-.container {
-  @apply sm:px-4 mx-auto;
+  .container {
+    @apply sm:px-4 mx-auto;
+  }
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      /* width: 750px !important; */
+      @apply w-[750px];
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      /* width: 970px !important; */
+      @apply w-[970px];
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      /* width: 1170px !important; */
+      @apply w-[1170px];
+    }
+  }
+  /* XL */
+  @media (min-width: 1400px) {
+    .container {
+      /* width: 1320px !important; */
+      @apply w-[1170px];
+    }
+  }
 }

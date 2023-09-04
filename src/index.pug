@@ -162,8 +162,8 @@ html(lang="en")
 
               input.capitalize.py-5.px-10.bg-main-color.rounded-md.text-white.text-sm.font-bold.justify-self-start(type="submit", value="inquiry now")
           //- image holder
-          div.border-2.border-main-color.rounded-3xl.self-end.relative(class="xs:right-9")
-            img.rounded-3xl.relative(class="xs:top-5 xs:left-14 sm:left-28 lg:rounded-tr-none", src="public/images/book-a-car.png", alt="side view of a small vintage orange car")
+          div.border-2.border-main-color.rounded-3xl.self-end.relative(class="xs:right-9 sm:max-lg:w-1/2 sm:max-lg:mx-auto")
+            img.rounded-3xl.relative.w-full(class="xs:top-5 xs:left-14 sm:left-28 lg:rounded-tr-none", src="public/images/book-a-car.png", alt="side view of a small vintage orange car")
 
     <!-- ============== comfortable car for hire section ============== -->
     section.relative.pt-32.pb-28
@@ -177,12 +177,12 @@ html(lang="en")
         //- grid container
         div(class="sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-10")
           //- first box
-          img.object-cover.mb-6(class="sm:mb-0 sm:self-stretch", src="public/images/comfortable-main.png", alt="side view of the rear of an orange beatle car")
+          img.object-cover.mb-6.w-full(class="sm:mb-0 sm:self-stretch", src="public/images/comfortable-main.png", alt="side view of the rear of an orange beatle car")
           //- second box
           div
             p.mb-8 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
 
-            p If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
+            p.mb-8(class="sm:mb-0") If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
           //- third box (also grid container)
           div.grid.grid-cols-2.gap-5(class="sm:col-span-full lg:col-span-1 justify-items-center")
             img.rounded-full.object-cover.h-full(src="public/images/comfortable-oval-beatle.png", alt="wide lence shot of a the back of a yellow beatle car among old buildings")
@@ -192,7 +192,7 @@ html(lang="en")
             img.col-span-2.object-cover.h-full.w-full(src="public/images/comfortable-car-back.png", alt="back of an orange convortable car")
 
     <!-- ============== comfortable car for hire 2 section ============== -->
-    section.relative.pt-20.bg-main-color.text-white
+    section.relative.pt-20.bg-main-color.text-white.mb-96(class="lg:mb-52")
       //- decorative phrase
       p.font-heading.text-7xl.absolute.right-6.top-14.opacity-20.hidden(class="sm:block") Comfortable Car
       .container
@@ -210,7 +210,7 @@ html(lang="en")
           img.absolute.object-cover.right-0(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full lg:-bottom-9 lg:-right-1", src="public/images/comfortable2-secondary-right.png", alt="old yellow beatle car with a bike on its grate parked infront of a luxuries house with a tree beside the house door")
 
     <!-- ============== staff section ============== -->
-    section.relative.pt-52.mb-4
+    section.relative.mb-4
       //- background orange decoration
       div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
         div.aspect-square.bg-main-color.rounded-full.absolute(class='w-4/12 top-1/4 -translate-x-3/4 -translate-y-1/2 shadow-[2px_2px_30px_30px_var(--main-color)]')
@@ -224,7 +224,7 @@ html(lang="en")
         //- grid container
         div.grid.gap-20(class="max-lg:mt-24 lg:grid-cols-3 lg:gap-11")
           //- first box
-          div
+          div.w-fit.mx-auto
             img.mb-8(src="public/images/staff1.png", alt="smiling staff memeber facing the camera with his arms crossed wearing a dark havan pullover with light blue shirt under it, and glasses on his face")
 
             //- heading holder
@@ -241,7 +241,7 @@ html(lang="en")
 
 
           //- second box
-          div(class="lg:mt-20")
+          div.w-fit.mx-auto(class="lg:mt-20")
             img.mb-8(src="public/images/staff2.png", alt="smiling staff memeber facing the camera with a snowy background wearing a black hoody")
 
             //- heading holder
@@ -258,7 +258,7 @@ html(lang="en")
 
 
           //- third box
-          div(class="lg:mt-40")
+          div.w-fit.mx-auto(class="lg:mt-40")
             img.mb-8(src="public/images/staff3.png", alt="smiling bearded staff memeber facing the camera with his arms crossed wearing a light blue shirt")
 
             //- heading holder
@@ -276,13 +276,13 @@ html(lang="en")
     <!-- ============== review section ============== -->
     section.relative.pt-36.pb-44
       .container
-        div(class="sm:flex sm:items-end sm:justify-center sm:mb-20")
-          h2.mb-12.-mr-20 read the best review <br> from our users
+        div(class="lg:flex lg:items-end lg:justify-center sm:mb-20 sm:text-center lg:text-start")
+          h2.mb-12.-mr-20(class="lg:w-fit") read the best review <br> from our users
 
-          p(class="sm:w-2/5") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
+          p(class="lg:w-2/5") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised
 
         //- grid container
-        div.grid.grid-cols-1(class="sm:grid-cols-3")
+        div.grid.grid-cols-1(class="sm:grid-cols-2 lg:grid-cols-3")
           //- first box
           .pt-10.pb-7.rounded-3xl.mb-16(class="px-8")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
@@ -302,7 +302,7 @@ html(lang="en")
               span.capitalize.font-medium ronney samba
 
           //- second box
-          .pt-10.pb-7.rounded-3xl.bg-main-color.text-white.mb-16(class="px-8 sm:mt-24")
+          .pt-10.pb-7.rounded-3xl.bg-main-color.text-white.mb-16(class="px-8 lg:mt-24")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
@@ -320,11 +320,11 @@ html(lang="en")
               span.capitalize.font-medium jenniver janet
 
           //- third box
-          .pt-10.pb-7.rounded-3xl.mb-16(class="px-8")
+          .pt-10.pb-7.rounded-3xl.mb-16(class="px-8 sm:col-span-full lg:col-span-1 sm:text-center lg:text-start")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
-            div.flex.items-center.mb-10.text-2xl.text-yellow-500
+            div.flex.items-center.mb-10.text-2xl.text-yellow-500(class="sm:justify-center lg:justify-start")
               i.icon-star
               i.icon-star
               i.icon-star
@@ -332,22 +332,22 @@ html(lang="en")
               i.icon-star
 
             //- image with name
-            div.flex.items-center.gap-6
+            div.flex.items-center.gap-6(class="sm:justify-center lg:justify-start")
               img(src="public/images/client3.png", alt="a man facing the camera and smiling with a pink background")
 
               span.capitalize.font-medium ronney samba
 
     <!-- ============== footer section ============== -->
     footer.text-white.pt-28(class='bg-[#150A05]')
-      .container(class="sm:px-12")
+      .container(class="lg:px-12")
         div.mb-28(class="sm:flex sm:items-center sm:justify-between")
-          h2.mb-16.text-center(class="sm:mb-0 sm:text-start") welcome car zone
+          h2.mb-16.text-center(class="sm:mb-0 sm:text-start sm:w-fit") welcome car zone
 
           a.bg-main-color.text-white.rounded-full.py-5.px-14.block.text-center(href="#") view car
         .w-full.rounded-full.bg-white.mb-20(class='h-0.5')
 
         //- grid container
-        div.grid.grid-cols-1.text-center(class='smc:text-start sm:gap-x-12 sm:gap-y-32 sm:grid-cols-[1fr_2fr]')
+        div.grid.grid-cols-1.text-center(class='sm:text-start sm:gap-x-12 sm:gap-y-32 sm:grid-cols-[1fr_2fr]')
           //- first box
           div
             img.mb-2(src="public/images/logo-light.svg", alt="logo")
@@ -357,7 +357,7 @@ html(lang="en")
           div.grid.grid-cols-1.gap-10.py-16(class="sm:grid-cols-3 sm:py-0")
             //- first sub box
             div
-              p.mb-3.font-medium.uppercase.text-3xl about us
+              p.mb-3.font-medium.uppercase.text-3xl(class="sm:text-2xl") about us
                 ul
                   li
                     a(href="#") home
@@ -370,7 +370,7 @@ html(lang="en")
 
             //- second sub box
             div
-              p.mb-3.font-medium.uppercase.text-3xl company
+              p.mb-3.font-medium.uppercase.text-3xl(class="sm:text-2xl") company
                 ul
                   li
                     a(href="#") core values
@@ -394,14 +394,14 @@ html(lang="en")
 
 
           //- third box
-          div.flex.flex-col.items-center
-            div
+          div.flex.flex-col.items-center.col-span-full
+            div.w-full
               h2.text-3xl.mb-6 get in touch
 
               form.flex.flex-col.gap-5(action="POST")
                 input#news-letter-email.py-3.px-5.text-white.rounded-full(type="text", name="news letter email", placeholder="your email here", class='bg-main-color/20 placeholder:text-white')
 
-                input.rounded-full.bg-main-color.text-white(class="py-3.5 sm:px-40", type="submit", value="get access")
+                input.rounded-full.bg-main-color.text-white(class="py-3.5 lg:px-40", type="submit", value="get access")
 
         //- copyright
         div.pb-2.mt-40.capitalize.text-center.text-sm
