@@ -162,8 +162,8 @@ html(lang="en")
 
               input.capitalize.py-5.px-10.bg-main-color.rounded-md.text-white.text-sm.font-bold.justify-self-start(type="submit", value="inquiry now")
           //- image holder
-          div.border-2.border-main-color.rounded-3xl.self-end
-            img.rounded-3xl.relative(class="sm:top-5 sm:left-28 lg:rounded-tr-none", src="public/images/book-a-car.png", alt="side view of a small vintage orange car")
+          div.border-2.border-main-color.rounded-3xl.self-end.relative(class="xs:right-9")
+            img.rounded-3xl.relative(class="xs:top-5 xs:left-14 sm:left-28 lg:rounded-tr-none", src="public/images/book-a-car.png", alt="side view of a small vintage orange car")
 
     <!-- ============== comfortable car for hire section ============== -->
     section.relative.pt-32.pb-28
@@ -197,17 +197,17 @@ html(lang="en")
       p.font-heading.text-7xl.absolute.right-6.top-14.opacity-20.hidden(class="sm:block") Comfortable Car
       .container
         //- grid container
-        div(class="sm:grid sm:grid-cols-2 sm:items-end sm:mb-12 ms:justify-items-center")
-          h2.mb-8.text-3xl.leading-snug(class="sm:pb-36") Comfortable Car <br class="hidden sm:block"> For Hire !
+        div(class="lg:grid lg:grid-cols-2 lg:items-end lg:mb-12 lg:justify-items-center")
+          h2.mb-8.text-3xl.leading-snug(class="lg:pb-36") Comfortable Car <br class="hidden sm:block"> For Hire !
 
-          p.leading-loose There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
+          p.leading-loose(class="max-lg:mb-10") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
         //- image holder
-        div.relative.mx-auto.mb-12(class='sm:-mt-48 sm:w-4/5 translate-y-1/2 shadow-[1px_1px_100px_rgba(0,0,0,0.7)]')
-          img.absolute.hidden(class="sm:block top-[9%] -translate-x-1/2", src="public/images/comfortable2-secondary-left.png", alt="front view of an old beatle car with a black right wing in front of an old villa")
+        div.relative.mx-auto.mb-12(class='lg:-mt-48 lg:w-4/5 lg:translate-y-1/2 shadow-[1px_1px_100px_rgba(0,0,0,0.7)]')
+          img.absolute.object-cover(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full top-[9%] lg:-translate-x-1/2", src="public/images/comfortable2-secondary-left.png", alt="front view of an old beatle car with a black right wing in front of an old villa")
 
           img.object-cover.w-full(src="public/images/comfortable2-main.png", alt="side view of a yellowish beatle in front of an old house with a black iron fence in the autumn")
 
-          img.absolute.-bottom-9.-right-1.hidden(class="sm:block", src="public/images/comfortable2-secondary-right.png", alt="old yellow beatle car with a bike on its grate parked infront of a luxuries house with a tree beside the house door")
+          img.absolute.object-cover.right-0(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full lg:-bottom-9 lg:-right-1", src="public/images/comfortable2-secondary-right.png", alt="old yellow beatle car with a bike on its grate parked infront of a luxuries house with a tree beside the house door")
 
     <!-- ============== staff section ============== -->
     section.relative.pt-52.mb-4
