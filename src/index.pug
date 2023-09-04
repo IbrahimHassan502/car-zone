@@ -23,9 +23,9 @@ html(lang="en")
       .container.flex.items-center.pt-16.pb-8(class='lg:justify-between')
         //- logo
         .logo.mr-auto(class='lg:mr-0')
-          img(class='w-2/3 lg:w-full',src="public/images/logo.svg", alt="website logo")
+          img(class='w-2/3 xs:w-full',src="public/images/logo.svg", alt="website logo")
         //- notification holder (visible on mobile only)
-        .relative.mr-1(class="lg:hidden sm:mr-10")
+        .relative.mr-1(class="lg:hidden xs:mr-4 sm:mr-10")
           div.notfication-num.w-4.aspect-square.rounded-full.bg-red-600.text-xs.text-white.grid.place-items-center.text-xs.absolute.top-0.left-0(class='sm:w-5 -translate-y-1/2 translate-x-1/2') 4
           img(class="w-10/12", src="public/images/bell.svg", alt="notifcation icon")
         //- menu button
@@ -54,7 +54,7 @@ html(lang="en")
 
 
     <!-- ============== hero section ============== -->
-    section.relative.min-h-screen.flex.items-center.justify-center.pt-40(class="sm:pt-50")
+    section.relative.min-h-screen.flex.items-center.justify-center.pt-52(class="sm:pt-50")
       //- background orange decoration
       div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
         div.aspect-square.bg-main-color.rounded-full.absolute.inset-0(class='w-4/12 -translate-x-3/4 -translate-y-1/2 shadow-[2px_2px_30px_30px_var(--main-color)]')
@@ -65,7 +65,7 @@ html(lang="en")
         //-first row, flex container
         div(class="sm:flex")
           //- heading holder
-          .capitalize.grow.leading-none.text-2xl.mb-10(class='sm:text-[65px]')
+          .capitalize.grow.leading-none.text-2xl.mb-10(class='xs:text-4xl sm:text-[65px]')
             h1.mb-2(class="sm:mb-5") best in auto
             p.font-heading.pl-4(class='sm:pl-28') rent &amp; service
           //- image holder
@@ -77,7 +77,7 @@ html(lang="en")
         //- second row, grid container
         .hero-row.grid-cols-2.items-end.gap-14(class="sm:grid")
           //- image holder
-          p.leading-relaxed.col-start-2.mt-8(class="sm:mb-8") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to
+          p.leading-relaxed.col-start-2.mt-20.-mb-12(class="lg:mb-8") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to
 
           div.relative.rounded-full.overflow-hidden.z-10(class="translate-y-1/2 lg:w-2/5 sm:absolute")
             //- image decorateive curve

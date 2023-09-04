@@ -25,5 +25,5 @@
 }
 
 .container {
-  @apply px-4 mx-auto;
+  @apply sm:px-4 mx-auto;
 }
