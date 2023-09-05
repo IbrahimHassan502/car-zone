@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="public/css/style.css">
   </head>
   <body class="text-sm leading-loose font-body sm:text:lg"><!-- ============== navigation bar ============== -->
-    <nav class="absolute w-full">
+    <nav class="absolute w-full z-10">
       <div class="container flex items-center pt-16 pb-8 lg:justify-between">
         <div class="logo mr-auto lg:mr-0"><img class="w-2/3 xs:w-full" src="public/images/logo.svg" alt="website logo"></div>
         <div class="relative mr-1 lg:hidden xs:mr-4 sm:mr-10">
@@ -21,17 +21,30 @@
         </div>
         <div class="menu-button text-xl relative z-30"><i class="icon-menu-outline lg:hidden"></i></div>
         <ul class="nav-list flex flex-col items-center uppercase font-medium gap-12 absolute inset-0 h-screen justify-center bg-white -translate-y-full duration-700 bg-white z-20 lg:relative  lg:h-auto lg:justify-start lg:bg-none lg:flex-row lg:translate-y-0">
-          <li><a href="#">home</a></li>
-          <li><a href="#">new</a></li>
-          <li><a href="#">used</a></li>
-          <li><a href="#">car detil</a></li>
-          <li><a href="#">pages</a></li>
-          <li class="lg:hidden"><a class="inline-block py-3 px-6 border-2 border-black rounded-md capitalize" href="#">login</a></li>
+          <li class="group active"><a class="duration-300 group-hover:text-main-color group-[.active]:text-main-color" href="#">home</a>
+            <div class="w-full h-px bg-main-color rounded-full duration-300 scale-x-0 group-hover:scale-x-100 group-[.active]:scale-x-100"></div>
+          </li>
+          <li class="group"><a class="duration-300 group-hover:text-main-color group-[.active]:text-main-color" href="#">new</a>
+            <div class="w-full h-px bg-main-color rounded-full duration-300 scale-x-0 group-hover:scale-x-100 group-[.active]:scale-x-100"></div>
+          </li>
+          <li class="group"><a class="duration-300 group-hover:text-main-color group-[.active]:text-main-color" href="#">used</a>
+            <div class="w-full h-px bg-main-color rounded-full duration-300 scale-x-0 group-hover:scale-x-100 group-[.active]:scale-x-100"></div>
+          </li>
+          <li class="group"><a class="duration-300 group-hover:text-main-color group-[.active]:text-main-color" href="#">car detil</a>
+            <div class="w-full h-px bg-main-color rounded-full duration-300 scale-x-0 group-hover:scale-x-100 group-[.active]:scale-x-100"></div>
+          </li>
+          <li class="group"><a class="duration-300 group-hover:text-main-color group-[.active]:text-main-color" href="#">pages</a>
+            <div class="w-full h-px bg-main-color rounded-full duration-300 scale-x-0 group-hover:scale-x-100 group-[.active]:scale-x-100"></div>
+          </li>
+          <li class="lg:hidden"><a class="inline-block py-3 px-6 border-2 border-black rounded-md capitalize cursor-pointer" href="#">login</a></li>
         </ul>
         <div class="items-center gap-10 hidden lg:flex">
-          <div class="relative">
-            <div class="notfication-num w-5 h-5 rounded-full bg-red-600 text-white grid place-items-center text-xs absolute top-0 left-0 -translate-y-1/2 translate-x-1/2">4</div><img src="public/images/bell.svg" alt="notifcation icon">
-          </div><a class="py-3 px-6 border-2 border-black rounded-md capitalize" href="#">login</a>
+          <div class="relative cursor-pointer group">
+            <div class="notfication-num w-5 h-5 rounded-full bg-red-600 text-white grid place-items-center text-xs absolute top-0 left-0 -translate-y-1/2 translate-x-1/2">4            </div><img src="public/images/bell.svg" alt="notifcation icon">
+          </div>
+          <div class="group relative overflow-hidden cursor-pointer rounded-md"><a class="block py-3 px-6 border-2 border-black capitalize relative z-10 duration-300 group-hover:text-white group-hover:border-main-color" href="#">login</a>
+            <div class="absolute w-full h-full bg-main-color top-full left-0 duration-200 group-hover:top-0"></div>
+          </div>
         </div>
       </div>
     </nav><!-- ============== hero section ============== -->
@@ -65,22 +78,22 @@
         <p class="text-center mx-auto mb-9 sm:w-2/3">Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias</p>
         <div class="grid gap-20 lg:grid-cols-3 lg:gap-12">
           <div><img class="mb-8" src="public/images/why-us-car1.png" alt="side view vintage dark green car">
-            <div class="relative mb-4">
-              <h2 class="text-3xl sm:4xl">Online Vehicle Rental <br> Booking</h2>
+            <div class="relative mb-4 w-fit">
+              <h2 class="text-3xl w-fit sm:4xl">Online Vehicle Rental <br> Booking</h2>
               <div class="absolute left-32 h-px rounded-full bg-white w-3/12 sm:left-40 bottom-2.5"></div>
             </div>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
           </div>
           <div class="lg:mt-20"><img class="mb-8" src="public/images/why-us-car2.png" alt="side view vintage dark green car">
-            <div class="relative mb-4">
-              <h2 class="text-4xl">Professional Technician <br> Services</h2>
+            <div class="relative mb-4 w-fit">
+              <h2 class="text-4xl w-fit">Professional Technician <br> Services</h2>
               <div class="absolute bottom-3 left-40 h-px rounded-full bg-white w-3/12"></div>
             </div>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
           </div>
           <div class="lg:mt-40"><img class="mb-8" src="public/images/why-us-car1.png" alt="side view vintage dark green car">
-            <div class="relative mb-4">
-              <h2 class="text-4xl">Full Auto Servicing <br> Facility</h2>
+            <div class="relative mb-4 w-fit">
+              <h2 class="text-4xl w-fit">Full Auto Servicing <br> Facility</h2>
               <div class="absolute bottom-3 left-40 h-px rounded-full bg-white w-3/12"></div>
             </div>
             <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
@@ -109,10 +122,10 @@
               </select>
               <input class="py-4 px-8 w-full placeholder:text-black placeholder:font-light placeholder:capitalize" id="pick-up-date" type="text" onfocus="(this.type='date')" name="pick up date" placeholder="pick up date">
               <input class="py-4 px-8 w-full placeholder:text-black placeholder:font-light placeholder:capitalize" id="drop-off-date" type="text" onfocus="(this.type='date')" name="drop off date" placeholder="drop off date">
-              <input class="capitalize py-5 px-10 bg-main-color rounded-md text-white text-sm font-bold justify-self-start" type="submit" value="inquiry now">
+              <input class="capitalize py-5 px-10 bg-main-color rounded-md text-white text-sm font-bold justify-self-start cursor-pointer duration-300 hover:bg-transparent hover:text-main-color" type="submit" value="inquiry now">
             </form>
           </div>
-          <div class="border-2 border-main-color rounded-3xl self-end relative xs:right-9 sm:max-lg:w-1/2 sm:max-lg:mx-auto"><img class="rounded-3xl relative w-full xs:top-5 xs:left-14 sm:left-28 lg:rounded-tr-none" src="public/images/book-a-car.png" alt="side view of a small vintage orange car"></div>
+          <div class="border-2 border-main-color rounded-3xl self-end relative xs:right-9 lg:right-0 sm:max-lg:w-1/2 sm:max-lg:mx-auto"><img class="rounded-3xl relative w-full xs:top-5 xs:left-14 sm:left-28 lg:rounded-tr-none" src="public/images/book-a-car.png" alt="side view of a small vintage orange car"></div>
         </div>
       </div>
     </section><!-- ============== comfortable car for hire section ============== -->
@@ -149,26 +162,26 @@
       <div class="container">
         <h2 class="text-center mb-6">our faithful staff</h2>
         <p class="text-center mx-auto mb-10 sm:w-2/3">Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias, bibendum elit nemo.</p>
-        <div class="grid gap-20 max-lg:mt-24 lg:grid-cols-3 lg:gap-11">
+        <div class="grid gap-20 md:mt-24 md:grid-cols-3 md:gap-4">
           <div class="w-fit mx-auto"><img class="mb-8" src="public/images/staff1.png" alt="smiling staff memeber facing the camera with his arms crossed wearing a dark havan pullover with light blue shirt under it, and glasses on his face">
-            <div class="relative mb-2 flex items-center">
-              <h2 class="text-4xl capitalize mb-2">william scott</h2>
+            <div class="relative mb-2 flex items-center gap-3">
+              <h2 class="text-4xl capitalize mb-2 w-fit md:text-2xl lg:text-4xl">william scott</h2>
               <div class="h-px rounded-full bg-black w-3/12"></div>
             </div>
             <p class="capitalize font-medium">rental agent</p>
             <div class="flex items-center gap-0.5"><i class="icon-phone"></i><span>(+89)652 555 320</span></div>
           </div>
-          <div class="w-fit mx-auto lg:mt-20"><img class="mb-8" src="public/images/staff2.png" alt="smiling staff memeber facing the camera with a snowy background wearing a black hoody">
-            <div class="relative mb-2 flex items-center">
-              <h2 class="text-4xl capitalize mb-2">william scott</h2>
+          <div class="w-fit mx-auto md:mt-20"><img class="mb-8" src="public/images/staff2.png" alt="smiling staff memeber facing the camera with a snowy background wearing a black hoody">
+            <div class="relative mb-2 flex items-center gap-3">
+              <h2 class="text-4xl capitalize mb-2 w-fit md:text-2xl lg:text-4xl">william scott</h2>
               <div class="h-px rounded-full bg-black w-3/12"></div>
             </div>
             <p class="capitalize font-medium">rental agent</p>
             <div class="flex items-center gap-0.5"><i class="icon-phone"></i><span>(+89)652 555 320</span></div>
           </div>
-          <div class="w-fit mx-auto lg:mt-40"><img class="mb-8" src="public/images/staff3.png" alt="smiling bearded staff memeber facing the camera with his arms crossed wearing a light blue shirt">
-            <div class="relative mb-2 flex items-center">
-              <h2 class="text-4xl capitalize mb-2">william scott</h2>
+          <div class="w-fit mx-auto md:mt-40"><img class="mb-8" src="public/images/staff3.png" alt="smiling bearded staff memeber facing the camera with his arms crossed wearing a light blue shirt">
+            <div class="relative mb-2 flex items-center gap-3">
+              <h2 class="text-4xl capitalize mb-2 w-fit md:text-2xl lg:text-4xl">william scott</h2>
               <div class="h-px rounded-full bg-black w-3/12"></div>
             </div>
             <p class="capitalize font-medium">rental agent</p>
@@ -205,7 +218,7 @@
     <footer class="text-white pt-28 bg-[#150A05]">
       <div class="container lg:px-12">
         <div class="mb-28 sm:flex sm:items-center sm:justify-between">
-          <h2 class="mb-16 text-center sm:mb-0 sm:text-start sm:w-fit">welcome car zone</h2><a class="bg-main-color text-white rounded-full py-5 px-14 block text-center" href="#">view car</a>
+          <h2 class="mb-16 text-center sm:mb-0 sm:text-start sm:w-fit">welcome car zone</h2><a class="bg-main-color text-white rounded-full py-5 px-14 block text-center border-2 border-transparent duration-300 hover:bg-transparent hover:text-main-color hover:border-main-color" href="#">view car</a>
         </div>
         <div class="w-full rounded-full bg-white mb-20 h-0.5"></div>
         <div class="grid grid-cols-1 text-center sm:text-start sm:gap-x-12 sm:gap-y-32 sm:grid-cols-[1fr_2fr]">
@@ -244,11 +257,11 @@
             </div>
           </div>
           <div class="flex flex-col items-center col-span-full">
-            <div class="w-full">
+            <div class="w-full md:w-3/5 md:mx-auto">
               <h2 class="text-3xl mb-6">get in touch</h2>
               <form class="flex flex-col gap-5" action="POST">
                 <input class="py-3 px-5 text-white rounded-full bg-main-color/20 placeholder:text-white" id="news-letter-email" type="text" name="news letter email" placeholder="your email here">
-                <input class="rounded-full bg-main-color text-white py-3.5 lg:px-40" type="submit" value="get access">
+                <input class="rounded-full bg-main-color text-white cursor-pointer py-3.5 lg:px-40" type="submit" value="get access">
               </form>
             </div>
           </div>
@@ -256,7 +269,7 @@
         <div class="pb-2 mt-40 capitalize text-center text-sm">
           <div class="mb-2 flex flex-col gap-4 justify-center flex-row">
             <div class="capitalize">coded with <i class="icon-heart text-main-color"></i>by <span class="text-main-color">IH codes</span></div>
-            <div class="capitalize">designed by <a class="text-main-color underline" href="https://www.figma.com/@tanvier">tanvir hasan</a></div>
+            <div class="capitalize">designed by <a class="text-main-color underline duration-300 hover:text-white" href="https://www.figma.com/@tanvier">tanvir hasan</a></div>
           </div>&copy; 2023 car zone. all rights reserved
         </div>
       </div>
