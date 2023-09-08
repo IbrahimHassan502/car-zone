@@ -55,3 +55,21 @@
     }
   }
 }
+
+@layer components {
+  .card {
+    @apply flex flex-col;
+  }
+  .card img {
+    @apply mb-8 w-full;
+  }
+  .card .heading-holder {
+    @apply relative mb-4 w-fit self-start;
+  }
+  .card .heading-holder h2 {
+    @apply w-fit;
+  }
+  .card .heading-holder .heading-decoration {
+    @apply absolute -right-1 h-px rounded-full bottom-3.5;
+  }
+}

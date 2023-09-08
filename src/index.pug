@@ -18,7 +18,7 @@ html(lang="en")
     link(rel="stylesheet", href="public/css/fontello.css")
     <!-- ============== main style ============== -->
     link(rel="stylesheet", href="public/css/style.css")
-  body.text-sm.leading-loose.font-body(class="sm:text:lg")
+  body.text-sm.leading-loose.font-body(class="sm:text-lg")
     <!-- ============== navigation bar ============== -->
     nav.absolute.w-full.z-10
       //- container satarts
@@ -108,40 +108,44 @@ html(lang="en")
       p.hidden.font-heading.text-7xl.absolute.right-2.top-20.opacity-20(class="lg:block") why choose us ?
       .container
         h2.text-center.mb-4.leading-normal(class="sm:mb-0") why choose us ?
-        p.text-center.mx-auto.mb-9(class='sm:w-2/3') Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias
+        p.text-center.mx-auto.mb-12(class='sm:w-2/3 lg:md-9') Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias
         //- grid container
-        div.grid.gap-20(class="lg:grid-cols-3 lg:gap-12")
+        div.grid.gap-20(class="md:grid-cols-3 md:gap-5 lg:gap-12")
           //- first box
-          div
-            img.mb-8(src="public/images/why-us-car1.webp", width="456", height="342", alt="side view vintage dark green car")
+          div.card
+            img(src="public/images/why-us-car1.webp", width="456", height="342", alt="side view vintage dark green car")
             //- heading holder
-            div.relative.mb-4.w-fit
-              h2.text-3xl.w-fit(class="sm:4xl") Online Vehicle Rental <br> Booking
+            div.heading-holder
+              h2(class="text-3xl sm:text-4xl md:text-xl lg:text-3xl xl:text-4xl") Online Vehicle Rental <br> Booking
 
-              div.absolute.left-32.h-px.rounded-full.bg-white(class="w-3/12 sm:left-40 bottom-2.5")
+              .heading-decoration.bg-white.-translate-x-full(class="w-3/12")
 
-            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+
+            p(class="md:text-sm") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
           //- second box
-          div(class="lg:mt-20")
-            img.mb-8(src="public/images/why-us-car2.webp", width="456", height="342", alt="side view vintage dark green car")
+          div.card(class="md:mt-10 lg:mt-20")
+            img(src="public/images/why-us-car2.webp", width="456", height="342", alt="side view vintage dark green car")
             //- heading holder
-            div.relative.mb-4.w-fit
-              h2.text-4xl.w-fit Professional Technician <br> Services
+            div.heading-holder
+              h2(class="text-3xl sm:text-4xl md:text-xl lg:text-2xl xl:text-4xl") Professional Technician <br> Services
 
-              div.absolute.bottom-3.left-40.h-px.rounded-full.bg-white(class="w-3/12")
+              .heading-decoration.bg-white.-translate-x-full(class="w-3/12")
 
-            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+
+            p(class="md:text-sm") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
           //- third box
-          div(class="lg:mt-40")
-            img.mb-8(src="public/images/why-us-car3.webp", width="456", height="342", alt="side view vintage dark green car")
+          div.card(class="md:mt-20 lg:mt-40")
+            img(src="public/images/why-us-car3.webp", width="456", height="342", alt="side view vintage dark green car")
             //- heading holder
-            div.relative.mb-4.w-fit
-              h2.text-4xl.w-fit Full Auto Servicing <br> Facility
+            div.heading-holder
+              h2(class="text-3xl sm:text-4xl md:text-xl lg:text-3xl xl:text-4xl") Full Auto Servicing <br> Facility
 
-              div.absolute.bottom-3.left-40.h-px.rounded-full.bg-white(class="w-3/12")
-            p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
+              .heading-decoration.bg-white.-translate-x-full(class="w-3/12")
+
+
+            p(class="md:text-sm") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
 
     <!-- ============== rent a car ============== -->
@@ -240,13 +244,15 @@ html(lang="en")
         //- grid container
         div.grid.gap-20(class="md:mt-24 md:grid-cols-3 md:gap-4")
           //- first box
-          div.w-fit.mx-auto
+          div.card
             img.mb-8(src="public/images/staff1.webp", width="456", height="342",  alt="smiling staff memeber facing the camera with his arms crossed wearing a dark havan pullover with light blue shirt under it, and glasses on his face")
 
             //- heading holder
-            div.relative.mb-2.flex.items-center.gap-3
-              h2.text-4xl.capitalize.mb-2.w-fit(class="md:text-2xl lg:text-4xl") william scott
-              div.h-px.rounded-full.bg-black(class="w-3/12")
+            div.heading-holder
+              h2(class="text-3xl sm:text-4xl md:text-3xl xl:text-4xl") william scott
+
+              .heading-decoration.bg-black.translate-x-full(class="w-2/12")
+
 
             p.capitalize.font-medium rental agent
 
@@ -257,13 +263,15 @@ html(lang="en")
 
 
           //- second box
-          div.w-fit.mx-auto(class="md:mt-20")
+          div.card(class="md:mt-20")
             img.mb-8(src="public/images/staff2.webp", width="456", height="342",   alt="smiling staff memeber facing the camera with a snowy background wearing a black hoody")
 
             //- heading holder
-            div.relative.mb-2.flex.items-center.gap-3
-              h2.text-4xl.capitalize.mb-2.w-fit(class="md:text-2xl lg:text-4xl") william scott
-              div.h-px.rounded-full.bg-black(class="w-3/12")
+            div.heading-holder
+              h2(class="text-3xl smd:text-4xl md:text-3xl xl:text-4xl") william scott
+
+              .heading-decoration.bg-black.translate-x-full(class="w-2/12")
+
 
             p.capitalize.font-medium rental agent
 
@@ -274,13 +282,15 @@ html(lang="en")
 
 
           //- third box
-          div.w-fit.mx-auto(class="md:mt-40")
+          div.card(class="md:mt-40")
             img.mb-8(src="public/images/staff3.webp", width="456", height="342",   alt="smiling bearded staff memeber facing the camera with his arms crossed wearing a light blue shirt")
 
             //- heading holder
-            div.relative.mb-2.flex.items-center.gap-3
-              h2.text-4xl.capitalize.mb-2.w-fit(class="md:text-2xl lg:text-4xl") william scott
-              div.h-px.rounded-full.bg-black(class="w-3/12")
+            div.heading-holder
+              h2(class="text-3xl sm:text-4xl mg:text-3xl xl:text-4xl") william scott
+
+              .heading-decoration.bg-black.translate-x-full(class="w-2/12")
+
 
             p.capitalize.font-medium rental agent
 
