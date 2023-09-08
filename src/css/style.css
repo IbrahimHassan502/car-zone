@@ -24,7 +24,7 @@
   }
 
   .container {
-    @apply sm:px-4 mx-auto max-w-none;
+    @apply sm:px-4 mx-auto max-w-none px-5 xs:px-0;
   }
   /* Small */
   @media (min-width: 768px) {
