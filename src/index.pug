@@ -108,16 +108,17 @@ html(lang="en")
 
 
     <!-- ============== why us section ============== -->
-    section.group.why-us-section.relative.pt-48.pb-24.bg-main-color.text-white.overflow-hidden.animate(class="xs:max-lg:pt-72")
+    section.why-us-section.relative.pt-48.pb-24.bg-main-color.text-white.overflow-hidden(class="xs:max-lg:pt-72")
       //- decorative phrase
-      p(class="lg:block hidden font-heading text-7xl absolute right-2 top-20 decorative-title translate-x-2/3 group-[.in-view]:translate-x-0 opacity-0 group-[.in-view]:opacity-20 ease-out duration-[3000ms]") why choose us ?
+      div.group.animate
+        p(class="lg:block hidden font-heading text-7xl absolute right-2 top-20 decorative-title translate-x-2/3 group-[.in-view]:translate-x-0 opacity-0 group-[.in-view]:opacity-20 ease-out duration-3000") why choose us ?
       .container
         h2.text-center.mb-4.leading-normal(class="sm:mb-0") why choose us ?
         p.text-center.mx-auto.mb-12(class='sm:w-2/3 lg:md-9') Delectus, nesciunt imperdiet dolor litora orci? Tristique per natus. Saepe convallis, nostra. Ducimus convallis necessitatibus alias
         //- grid container
-        div.grid.gap-20(class="md:grid-cols-3 md:gap-5 lg:gap-12")
+        div.grid.gap-20.group.animate(class="md:grid-cols-3 md:gap-5 lg:gap-12")
           //- first box
-          div(class="card translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[2000ms]")
+          div(class="card translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-2000")
             img(src="public/images/why-us-car1.webp", width="456", height="342", alt="side view vintage dark green car")
             //- heading holder
             div.heading-holder
@@ -129,7 +130,7 @@ html(lang="en")
             p(class="md:text-sm") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
           //- second box
-          div(class="card md:mt-10 lg:mt-20 translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[2000ms] delay-500")
+          div(class="card md:mt-10 lg:mt-20 translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-2000 delay-500")
             img(src="public/images/why-us-car2.webp", width="456", height="342", alt="side view vintage dark green car")
             //- heading holder
             div.heading-holder
@@ -141,7 +142,7 @@ html(lang="en")
             p(class="md:text-sm") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
 
           //- third box
-          div(class="card md:mt-20 lg:mt-40 translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[2000ms] delay-700")
+          div(class="card md:mt-20 lg:mt-40 translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-2000 delay-700")
             img(src="public/images/why-us-car3.webp", width="456", height="342", alt="side view vintage dark green car")
             //- heading holder
             div.heading-holder
@@ -188,7 +189,7 @@ html(lang="en")
               input.capitalize.py-5.px-10.bg-main-color.rounded-md.text-white.text-sm.font-bold.justify-self-start.cursor-pointer.duration-300(class="hover:bg-transparent hover:text-main-color", type="submit", value="inquiry now")
           //- image holder
           div.border-2.border-main-color.rounded-3xl.self-end.relative.group.animate(class="xs:right-9 lg:right-0 sm:max-lg:w-1/2 sm:max-lg:mx-auto")
-            img.rounded-3xl.relative.w-full(class="top-0 left-0 xs:group-[.in-view]:top-5 xs:group-[.in-view]:left-14 sm:group-[.in-view]:left-28 lg:group-[.in-view]:rounded-tr-none ease-out duration-[1500ms]", src="public/images/book-a-car.webp", width="501", height="543", alt="side view of a small vintage orange car")
+            img.rounded-3xl.relative.w-full(class="top-0 left-0 xs:group-[.in-view]:top-5 xs:group-[.in-view]:left-14 sm:group-[.in-view]:left-28 lg:group-[.in-view]:rounded-tr-none ease-out duration-1500", src="public/images/book-a-car.webp", width="501", height="543", alt="side view of a small vintage orange car")
 
     <!-- ============== comfortable car for hire section ============== -->
     section.relative.pt-32.pb-28
@@ -203,7 +204,7 @@ html(lang="en")
         div(class="sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-10")
           //- first box
           div.group.animate
-            img.object-cover.mb-6.w-full(class="sm:mb-0 sm:self-stretch duration-[1500ms] scale-0 group-[.in-view]:scale-100 opacity-0 group-[.in-view]:opacity-100", src="public/images/comfortable-main.webp", width="369", height="475",  alt="side view of the rear of an orange beatle car")
+            img.object-cover.mb-6.w-full(class="sm:mb-0 sm:self-stretch duration-1500 scale-0 group-[.in-view]:scale-100 opacity-0 group-[.in-view]:opacity-100", src="public/images/comfortable-main.webp", width="369", height="475",  alt="side view of the rear of an orange beatle car")
           //- second box
           div
             p.mb-8 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessaryc.
@@ -220,7 +221,8 @@ html(lang="en")
     <!-- ============== comfortable car for hire 2 section ============== -->
     section.relative.pt-20.bg-main-color.text-white.overflow-hidden
       //- decorative phrase
-      p(class="lg:block font-heading text-7xl absolute right-6 top-14 hidden animate decorative-title translate-x-2/3 opacity-0 ease-out duration-[3000ms]") Comfortable Car
+      div.group.animate
+        p(class="lg:block font-heading text-7xl absolute right-6 top-14 hidden decorative-title translate-x-2/3 group-[.in-view]:translate-x-0 opacity-0 group-[.in-view]:opacity-100 ease-out duration-3000") Comfortable Car
       .container
         //- grid container
         div(class="lg:grid lg:grid-cols-2 lg:items-end lg:mb-12 lg:justify-items-center")
@@ -229,11 +231,11 @@ html(lang="en")
           p.leading-loose(class="max-lg:mb-10") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
         //- image holder
         div.relative.mx-auto.mb-12.group.animate(class='mb-[65%] lg:mb-[25%] lg:-mt-48 lg:w-4/5 lg:translate-y-1/2 shadow-[1px_1px_100px_rgba(0,0,0,0.7)]')
-          img.absolute.object-cover.z-20(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full top-[9%] lg:-translate-x-1/2 -translate-y-2/3 group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 ease-out duration-[1500ms] delay-100", src="public/images/comfortable2-secondary-left.webp", width="237", height="182",  alt="front view of an old beatle car with a black right wing in front of an old villa")
+          img.absolute.object-cover.z-20(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full top-[9%] lg:-translate-x-1/2 -translate-y-2/3 group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 ease-out duration-1500 delay-100", src="public/images/comfortable2-secondary-left.webp", width="237", height="182",  alt="front view of an old beatle car with a black right wing in front of an old villa")
 
           img.object-cover.w-full(class="opacity-0 group-[.in-view]:opacity-100 duration-1000", src="public/images/comfortable2-main.webp", width="1127", height="436",  alt="side view of a yellowish beatle in front of an old house with a black iron fence in the autumn")
 
-          img.absolute.object-cover.right-0(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full lg:-bottom-9 lg:-right-1 translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 ease-in-out duration-[1500ms] delay-100", src="public/images/comfortable2-secondary-right.webp", width="252", height="192",  alt="old yellow beatle car with a bike on its grate parked infront of a luxuries house with a tree beside the house door")
+          img.absolute.object-cover.right-0(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full lg:-bottom-9 lg:-right-1 translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 ease-in-out duration-1500 delay-100", src="public/images/comfortable2-secondary-right.webp", width="252", height="192",  alt="old yellow beatle car with a bike on its grate parked infront of a luxuries house with a tree beside the house door")
 
     <!-- ============== staff section ============== -->
     section.relative.mb-4
@@ -250,7 +252,7 @@ html(lang="en")
         //- grid container
         div.grid.gap-20.group.animate(class="md:mt-24 md:grid-cols-3 md:gap-4")
           //- first box
-          div.card(class="translate-y-1/2 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[1500ms]")
+          div.card(class="translate-y-1/2 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500")
             img.mb-8(src="public/images/staff1.webp", width="456", height="342",  alt="smiling staff memeber facing the camera with his arms crossed wearing a dark havan pullover with light blue shirt under it, and glasses on his face")
 
             //- heading holder
@@ -269,7 +271,7 @@ html(lang="en")
 
 
           //- second box
-          div.card(class="translate-y-1/2 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[1500ms] delay-500 md:mt-10 lg:mt-20")
+          div.card(class="translate-y-1/2 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 delay-500 md:mt-10 lg:mt-20")
             img.mb-8(src="public/images/staff2.webp", width="456", height="342",   alt="smiling staff memeber facing the camera with a snowy background wearing a black hoody")
 
             //- heading holder
@@ -288,7 +290,7 @@ html(lang="en")
 
 
           //- third box
-          div.card(class="translate-y-1/2 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[1500ms] delay-700 md:mt-20 lg:mt-40")
+          div.card(class="translate-y-1/2 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 delay-700 md:mt-20 lg:mt-40")
             img.mb-8(src="public/images/staff3.webp", width="456", height="342",   alt="smiling bearded staff memeber facing the camera with his arms crossed wearing a light blue shirt")
 
             //- heading holder
@@ -316,7 +318,7 @@ html(lang="en")
         //- grid container
         div.grid.grid-cols-1.group.animate(class="sm:grid-cols-2 lg:grid-cols-3")
           //- first box
-          .pt-10.pb-7.rounded-3xl.mb-16(class="px-8 -translate-y-2/3 group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[1500ms]")
+          .pt-10.pb-7.rounded-3xl.mb-16(class="px-8 md:-translate-y-2/3 md:group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
@@ -334,7 +336,7 @@ html(lang="en")
               span.capitalize.font-medium ronney samba
 
           //- second box
-          .pt-10.pb-7.rounded-3xl.bg-main-color.text-white.mb-16(class="translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[1500ms] px-8 lg:mt-24")
+          .pt-10.pb-7.rounded-3xl.bg-main-color.text-white.mb-16(class="md:translate-y-2/3 md:group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 px-8 lg:mt-24")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
@@ -352,7 +354,7 @@ html(lang="en")
               span.capitalize.font-medium jenniver janet
 
           //- third box
-          .pt-10.pb-7.rounded-3xl.mb-16(class="-translate-y-2/3 group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-[1500ms] px-8 sm:col-span-full lg:col-span-1 sm:text-center lg:text-start")
+          .pt-10.pb-7.rounded-3xl.mb-16(class="md:-translate-y-2/3 md:group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 px-8 sm:col-span-full lg:col-span-1 sm:text-center lg:text-start")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
