@@ -1045,6 +1045,22 @@ h2 {
   animation: fade-in 1.5s ease-out forwards;
 }
 
+@keyframes slide-up-in {
+  0% {
+    opacity: 0;
+    transform: translateY(66.666%);
+  }
+
+   100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-up-in {
+  animation: slide-up-in 1s ease-out forwards;
+}
+
 .cursor-pointer {
   cursor: pointer;
 }
@@ -1539,10 +1555,6 @@ h2 {
 
 .ease-out {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
-}
-
-.\[animation-delay\:500ms\] {
-  animation-delay: 500ms;
 }
 
 .\[animation-delay\:300ms\] {

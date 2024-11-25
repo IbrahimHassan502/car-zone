@@ -82,24 +82,24 @@ html(lang="en")
       //- container
       .container
         //-first row, flex container
-        div(class="lg:flex")
+        div.animate-fade-in.opacity-0(class="lg:flex")
           //- heading holder
           .capitalize.grow.leading-none.text-2xl.mb-10(class='xs:text-4xl sm:text-[65px]')
             h1.mb-2(class="sm:mb-5") best in auto
             p.font-heading.pl-4(class='sm:pl-28') rent &amp; service
           //- image holder
-          div.relative.rounded-full.overflow-hidden.animate-fade-in.opacity-0(class="lg:w-2/5")
+          div.relative.rounded-full.overflow-hidden(class="lg:w-2/5")
             //- image decorateive curve
             .rounded-full.absolute.left-10.bottom-5.w-full.h-full.border-2.border-white.rounded-full
               //- image
             img.w-full(src="public/images/hero-image.webp", width="571", height="346",  alt="back view of a convertible vintage orange car")
         //- second row, grid container
-        .hero-row.grid-cols-2.items-end.gap-14(class="lg:grid")
+        .hero-row.grid-cols-2.items-end.gap-14.animate-slide-up-in.z-10.relative(class="lg:grid translate-y-2/3 opacity-0 [animation-delay:300ms]")
 
           p.leading-relaxed.col-start-2.mt-20(class="max-sm:mt-40") There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to
 
           //- image holder
-          div.relative.rounded-full.overflow-hidden.z-10.animate-fade-in.opacity-0(class="translate-y-1/2 lg:w-2/5 lg:absolute max-lg:-mt-[20%] [animation-delay:300ms]")
+          div.relative.rounded-full.overflow-hidden.z-10(class="translate-y-1/2 lg:w-2/5 lg:absolute max-lg:-mt-[20%]")
             //- image decorateive curve
             .rounded-full.absolute.right-10.bottom-5.w-full.h-full.border-2.border-white.rounded-full
             //- image
