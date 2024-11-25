@@ -20,17 +20,20 @@ menuBtn.addEventListener("click", () => {
 /*
 ===================== animate section titles when in veiw =====================
 */
-const observer = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("in-view");
-        return;
-      }
-    });
-  }
-  // { threshold: 0.35 }
-);
+const options = {
+  ...(screen.width > 768 && { threshold: 0.35 }),
+};
+console.log(options);
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("in-view");
+      return;
+    } else {
+      entry.target.classList.remove("in-view");
+    }
+  });
+}, options);
 
 const allAnimatedElements = document.querySelectorAll(".animate");
 allAnimatedElements.forEach((element) => {

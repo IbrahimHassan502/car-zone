@@ -192,7 +192,7 @@ html(lang="en")
             img.rounded-3xl.relative.w-full(class="top-0 left-0 xs:group-[.in-view]:top-5 xs:group-[.in-view]:left-14 sm:group-[.in-view]:left-28 lg:group-[.in-view]:rounded-tr-none ease-out duration-1500", src="public/images/book-a-car.webp", width="501", height="543", alt="side view of a small vintage orange car")
 
     <!-- ============== comfortable car for hire section ============== -->
-    section.relative.pt-32.pb-28
+    section.relative.pt-32.pb-28.overflow-hidden
       //- background orange decoration
       div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
         div.aspect-square.bg-main-color.rounded-full.absolute.bottom-0.right-0(class='w-4/12 translate-x-3/4 translate-y-1/2 shadow-[2px_2px_30px_30px_var(--main-color)]')
@@ -222,7 +222,7 @@ html(lang="en")
     section.relative.pt-20.bg-main-color.text-white.overflow-hidden
       //- decorative phrase
       div.group.animate
-        p(class="lg:block font-heading text-7xl absolute right-6 top-14 hidden decorative-title translate-x-2/3 group-[.in-view]:translate-x-0 opacity-0 group-[.in-view]:opacity-100 ease-out duration-3000") Comfortable Car
+        p(class="lg:block font-heading text-7xl absolute right-6 top-14 hidden decorative-title translate-x-2/3 group-[.in-view]:translate-x-0 opacity-0 group-[.in-view]:opacity-20 ease-out duration-3000") Comfortable Car
       .container
         //- grid container
         div(class="lg:grid lg:grid-cols-2 lg:items-end lg:mb-12 lg:justify-items-center")
@@ -238,7 +238,7 @@ html(lang="en")
           img.absolute.object-cover.right-0(class="max-lg:top-full max-lg:w-1/2 max-lg:h-full lg:-bottom-9 lg:-right-1 translate-y-2/3 group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 ease-in-out duration-1500 delay-100", src="public/images/comfortable2-secondary-right.webp", width="252", height="192",  alt="old yellow beatle car with a bike on its grate parked infront of a luxuries house with a tree beside the house door")
 
     <!-- ============== staff section ============== -->
-    section.relative.mb-4
+    section.relative.mb-4.overflow-hidden
       //- background orange decoration
       div.absolute.w-full.h-full.inset-0.overflow-hidden.opacity-20(class='z-[-1]')
         div.aspect-square.bg-main-color.rounded-full.absolute(class='w-4/12 top-1/4 -translate-x-3/4 -translate-y-1/2 shadow-[2px_2px_30px_30px_var(--main-color)]')
@@ -308,7 +308,7 @@ html(lang="en")
               span (+89)652 555 320
 
     <!-- ============== review section ============== -->
-    section.relative.pt-36.pb-44
+    section.relative.pt-36.pb-44.overflow-hidden
       .container
         div(class="lg:flex lg:items-end lg:justify-center sm:mb-20 sm:text-center lg:text-start")
           h2.mb-12.-mr-20(class="lg:w-fit") read the best review <br> from our users
@@ -318,7 +318,7 @@ html(lang="en")
         //- grid container
         div.grid.grid-cols-1.group.animate(class="sm:grid-cols-2 lg:grid-cols-3")
           //- first box
-          .pt-10.pb-7.rounded-3xl.mb-16(class="px-8 md:-translate-y-2/3 md:group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500")
+          .pt-10.pb-7.rounded-3xl.mb-16(class="px-8 -translate-x-full group-[.in-view]:translate-x-0 md:translate-x-0 md:-translate-y-2/3 md:group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
@@ -336,7 +336,7 @@ html(lang="en")
               span.capitalize.font-medium ronney samba
 
           //- second box
-          .pt-10.pb-7.rounded-3xl.bg-main-color.text-white.mb-16(class="md:translate-y-2/3 md:group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 px-8 lg:mt-24")
+          .pt-10.pb-7.rounded-3xl.bg-main-color.text-white.mb-16(class="translate-x-full group-[.in-view]:translate-x-0 md:translate-x-0 md:translate-y-2/3 md:group-[.in-view]:translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 delay-200 md:delay-0 px-8 lg:mt-24")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
@@ -354,7 +354,7 @@ html(lang="en")
               span.capitalize.font-medium jenniver janet
 
           //- third box
-          .pt-10.pb-7.rounded-3xl.mb-16(class="md:-translate-y-2/3 md:group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 px-8 sm:col-span-full lg:col-span-1 sm:text-center lg:text-start")
+          .pt-10.pb-7.rounded-3xl.mb-16(class="-translate-x-full group-[.in-view]:translate-x-0 md:translate-x-0 md:-translate-y-2/3 md:group-[.in-view]:-translate-y-0 opacity-0 group-[.in-view]:opacity-100 duration-1500 delay-400 md:delay-0 px-8 sm:col-span-full lg:col-span-1 sm:text-center lg:text-start")
             p.mb-8.font-light I am very satisfied with the services provided and the consultation is very pleasant. The doctors are also friendly and very trustworthy and reliable
 
             //- star container
@@ -372,7 +372,7 @@ html(lang="en")
               span.capitalize.font-medium ronney samba
 
     <!-- ============== footer section ============== -->
-    footer.text-white.pt-28(class='bg-[#150A05]')
+    footer.text-white.pt-28.overflow-hidden(class='bg-[#150A05]')
       .container(class="lg:px-12")
         div.mb-28(class="sm:flex sm:items-center sm:justify-between")
           h2.mb-16.text-center(class="sm:mb-0 sm:text-start sm:w-fit") welcome car zone
